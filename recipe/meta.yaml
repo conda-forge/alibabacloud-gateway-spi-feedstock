@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - alibabacloud-credentials >=0.2.0,<1.0.0
+    - alibabacloud-credentials >=0.3.4,<1.0.0
 
 test:
   imports:
