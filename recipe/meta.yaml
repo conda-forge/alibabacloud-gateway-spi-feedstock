@@ -1,5 +1,5 @@
 {% set name = "alibabacloud-gateway-spi" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/alibabacloud_gateway_spi-{{ version }}.tar.gz
-  sha256: f932c8ba67291531dfbee6ca521dcf3523eb4ff93512bf0aaf135f2d4fc4704d
+  sha256: 10d1c53a3fc5f87915fbd6b4985b98338a776e9b44a0263f56643c5048223b8b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - alibabacloud-credentials >=0.3.4,<1.0.0
+    - alibabacloud-credentials >=0.3.4
 
 test:
   imports:
