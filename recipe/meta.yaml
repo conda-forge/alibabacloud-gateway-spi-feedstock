@@ -1,5 +1,5 @@
 {% set name = "alibabacloud-gateway-spi" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/alibabacloud_gateway_spi-{{ version }}.tar.gz
-  sha256: 10d1c53a3fc5f87915fbd6b4985b98338a776e9b44a0263f56643c5048223b8b
+  sha256: 73d6e20d65b54eed26d89c19640d3a7572e18c45ecada627f806f5dbe8ed2130
 
 build:
   noarch: python
